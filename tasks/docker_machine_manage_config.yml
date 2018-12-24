@@ -3,6 +3,7 @@
   - name: Check if machine exists
     stat:
       path: "{{ docker_machine_config_file }}"
+    delegate_to: "{{ docker_machine_master }}"
     register: docker_machine_host_check
 
   - name: Search and replace Docker Machine configuration file
@@ -12,6 +13,7 @@
       replace: "{{ item.replace }}"
     with_items: "{{ docker_machine_config_variables }}"
     when: docker_machine_host_check.stat.exists == true
+    delegate_to: "{{ docker_machine_master }}"
 
   tags:
     - docker-machine-manage-config
