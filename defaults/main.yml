@@ -3,6 +3,7 @@ docker_machine_master: 127.0.0.1
 docker_machine_executable: docker-machine
 docker_machine_create: false
 docker_machine_remove: false
+docker_machine_update: false
 docker_machine_manage_config: false
 docker_machine_install_version: 0.8.0
 docker_machine_install_url: https://github.com/docker/machine/releases/download/v{{ docker_machine_install_version }}/docker-machine-{{ ansible_system }}-{{ ansible_architecture }}

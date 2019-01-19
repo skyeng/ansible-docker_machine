@@ -7,3 +7,5 @@
   when: docker_machine_create
   environment:
     MACHINE_STORAGE_PATH: "{{ docker_machine_storage_path }}"
+- include: docker_machine_update.yml
+  when: docker_machine_update
