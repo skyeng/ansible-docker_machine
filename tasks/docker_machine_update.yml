@@ -1,4 +1,14 @@
 ---
+- name: Get docker-ce repository GPG key
+  apt_key:
+    url: "{{ docker_machine_docker_repo_gpg_url }}"
+    state: present
+    
+- name: Add docker-ce repository
+  apt_repository:
+    repo: "{{ docker_machine_docker_repo_url }}"
+    state: present
+    
 - name: Update docker-ce
   apt:
     update_cache: yes
