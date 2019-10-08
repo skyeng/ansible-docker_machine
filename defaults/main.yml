@@ -1,4 +1,6 @@
 ---
+docker_machine_docker_repo_gpg_url: 'http://aptly.skyeng.link/gpg/public.key'
+docker_machine_docker_repo_url: 'deb http://aptly.skyeng.link/aptly/docker-ce stretch stable'
 docker_machine_docker_ce_version: latest
 docker_machine_master: 127.0.0.1
 docker_machine_executable: docker-machine
