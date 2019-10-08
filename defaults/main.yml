@@ -1,4 +1,5 @@
 ---
+docker_machine_docker_ce_version: latest
 docker_machine_master: 127.0.0.1
 docker_machine_executable: docker-machine
 docker_machine_create: false
