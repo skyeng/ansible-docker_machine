@@ -3,5 +3,5 @@
   apt:
     update_cache: yes
     cache_valid_time: 600
-    name: docker-ce
-    state: latest
+    name: "docker-ce{{ '=' + docker_machine_docker_ce_version if docker_machine_docker_ce_version != 'latest' else '' }}"
+    state: present
