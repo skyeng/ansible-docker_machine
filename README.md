@@ -1,12 +1,20 @@
 Manage Docker Machine
 =========
 
+## Краткое описание
+
 Ansible role to manage machines for Docker Machine.
 - Install Docker Machine
 - Docker Machine create to each target host in inventory
 - Search and replace docker machine config.json file to change directory to where it stores
 
 You can see example how to make playbook, configuration and sample commands here https://github.com/winggundamth/ansible-wing-playbook
+
+## Ответственные
+- Code Owner: Александр Ковытин
+- Product Owner: Артём Науменко
+- Команда: InfraCore
+
 
 Remarks
 ------------
